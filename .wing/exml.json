@@ -1,0 +1,15 @@
+{
+    "16f832989ec": {
+        "path": "Game\\GameStart.ts",
+        "class": "GameStart",
+        "parentPath": ""
+    },
+    "global": {
+        "globalAutoLayerMarkEnable": false
+    },
+    "16f9df57260": {
+        "path": "Game\\GameSound.ts",
+        "class": "GameSound",
+        "parentPath": ""
+    }
+}
