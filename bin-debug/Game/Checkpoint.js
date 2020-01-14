@@ -50,7 +50,7 @@ var Checkpoint = (function (_super) {
         this.group_level.addChild(group);
         group.width = this.width;
         //滚动容器的关卡的高度=关卡的高度*关卡的个数
-        group.height = spanY * 400;
+        group.height = spanY * 620;
         //填充滚动容器的背景
         for (var i = 0; i < group.height / this.height; i++) {
             var img = new eui.Image();
@@ -60,13 +60,13 @@ var Checkpoint = (function (_super) {
             img.y = i * this.height;
             //禁用背景图
             img.touchEnabled = false;
-            //添加到滚动视图的显示列表
+            //添加到滚动视图的显示列表最底层
             this.group_level.addChildAt(img, 0);
         }
         //获取游戏存档关卡中玩的最远关卡
         var milestrone = levelData.Shared().Miletone;
         //动态生成关卡按钮
-        for (var i = 0; i < 400; i++) {
+        for (var i = 0; i < 620; i++) {
             //定义一个关卡按钮
             var icon = new levelIcon();
             //添加到group中去
